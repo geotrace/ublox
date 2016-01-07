@@ -13,7 +13,7 @@ func TestCache(t *testing.T) {
 	}
 	defer mongodb.Close()
 
-	cache, err := InitCache(mongodb, token)
+	cache, err := InitCache(mongodb, "", token)
 	if err != nil {
 		t.Fatal(err)
 	}
