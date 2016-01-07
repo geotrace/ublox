@@ -3,11 +3,11 @@ package ublox
 import (
 	"testing"
 
-	"github.com/mdigger/geotrack/mongo"
+	"gopkg.in/mgo.v2"
 )
 
 func TestCache(t *testing.T) {
-	mongodb, err := mongo.Connect("mongodb://localhost/geotrace")
+	mongodb, err := mgo.Dial("mongodb://localhost/geotrace")
 	if err != nil {
 		t.Fatal(err)
 	}

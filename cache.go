@@ -3,7 +3,7 @@ package ublox
 import (
 	"time"
 
-	"github.com/mdigger/geotrack/geo"
+	"github.com/geotrace/geo"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
@@ -16,8 +16,8 @@ var (
 
 // Cache описывает кеш ответов сервера U-blox с эфемеридами.
 type Cache struct {
-	name    string       // название базы данных
 	session *mgo.Session // хранилище MogoDB
+	name    string       // название базы данных
 	client  *Client      // клиент для доступа к информации U-blox
 }
 

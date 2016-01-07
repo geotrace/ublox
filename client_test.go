@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/mdigger/geotrack/geo"
+	"github.com/geotrace/geo"
 )
 
 var (

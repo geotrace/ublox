@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mdigger/geotrack/geo"
+	"github.com/geotrace/geo"
 )
 
 var (
